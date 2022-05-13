@@ -1,0 +1,16 @@
+C:\Projetos\csharp-playground\bin\Debug\net5.0\csharp-playground.exe
+C:\Projetos\csharp-playground\bin\Debug\net5.0\csharp-playground.deps.json
+C:\Projetos\csharp-playground\bin\Debug\net5.0\csharp-playground.runtimeconfig.json
+C:\Projetos\csharp-playground\bin\Debug\net5.0\csharp-playground.runtimeconfig.dev.json
+C:\Projetos\csharp-playground\bin\Debug\net5.0\csharp-playground.dll
+C:\Projetos\csharp-playground\bin\Debug\net5.0\ref\csharp-playground.dll
+C:\Projetos\csharp-playground\bin\Debug\net5.0\csharp-playground.pdb
+C:\Projetos\csharp-playground\obj\Debug\net5.0\csharp-playground.csproj.AssemblyReference.cache
+C:\Projetos\csharp-playground\obj\Debug\net5.0\csharp-playground.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\csharp-playground\obj\Debug\net5.0\csharp-playground.AssemblyInfoInputs.cache
+C:\Projetos\csharp-playground\obj\Debug\net5.0\csharp-playground.AssemblyInfo.cs
+C:\Projetos\csharp-playground\obj\Debug\net5.0\csharp-playground.csproj.CoreCompileInputs.cache
+C:\Projetos\csharp-playground\obj\Debug\net5.0\csharp-playground.dll
+C:\Projetos\csharp-playground\obj\Debug\net5.0\ref\csharp-playground.dll
+C:\Projetos\csharp-playground\obj\Debug\net5.0\csharp-playground.pdb
+C:\Projetos\csharp-playground\obj\Debug\net5.0\csharp-playground.genruntimeconfig.cache
