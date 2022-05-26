@@ -1,16 +1,19 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace csharp_playground
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            Rectangle rect = new Rectangle();
-            rect.TopLeft = new Point(10, 10);
-            rect.BottomRight = new Point(500, 500);
-            rect.DisplayStats();
-            Console.ReadLine();
-        }
+       static async Task Main(string[] args)
+       {
+           Console.WriteLine("Dicionário de Língua Portuguesa\n-----------------------------------------------------------");
+           Console.WriteLine("Escreva uma palavra para buscar sua definição");
+           Console.Write(">> ");
+           string word = Console.ReadLine();
+           
+           await PortugueseDictionary.GetDefinition(word.ToLower());
+       }
     }
+   
 }
