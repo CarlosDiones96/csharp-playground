@@ -1,6 +1,7 @@
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
+using System.Collections.Generic;
 
 public static class PortugueseDictionary
 {
@@ -11,7 +12,7 @@ public static class PortugueseDictionary
     {
         try
         {
-            string uri = "https://pt.wiktionary.org/wiki/" + word.ToLower();
+            string uri = "https://www.dicio.com.br/" + word.ToLower() + "/";
             response = await client.GetStringAsync(uri);
             FormatResponse();
         }
@@ -24,18 +25,13 @@ public static class PortugueseDictionary
 
     private static void FormatResponse()
     {
-        // StripStartTags(response);
-        // StripEndTags(response);
+        List<string> forbiddenStrings = new List<string>() {
+            " ", "\n", "\t", "<script>", "</script>", "{", "}", "(", ")", "[", "]", 
+            "<html>", "</html>", "<style>", "</style>", "class=", "id=" 
+        };
 
-        int start = response.IndexOf("<div id=\"bodyContent\" class=\"vector-body\">");
-        
-        if(start >= 0){
-            response = response.Substring(start + 1);
-            response = response.Replace(" ", "||");
-        }
-    
+        List<string> validLines = new List<string>();
         Console.WriteLine(response);
-        Console.WriteLine("\n\n\n");
     }
 
     private static string StripStartTags(string item)
