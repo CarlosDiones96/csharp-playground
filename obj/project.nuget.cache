@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "7o+RXzpYuQ4QZE0ka8SNzKuH8yOuaXH9dG8HvimTy82SFBUsc9gyCeFqfhI29o1e02ZIjT4Q3s4KrdNalrL5QQ==",
+  "dgSpecHash": "MrC4SqIm/O+fx3pe175pq/acFYcZYHrJHE3WaBNQl2RUhvNqWIm+Oa3NujbNPLzpSUxohD7Oo1HF36cc7HlGZw==",
   "success": true,
   "projectFilePath": "C:\\Projetos\\csharp-playground\\csharp-playground.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\dione\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+  ],
   "logs": []
 }
