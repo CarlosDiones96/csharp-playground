@@ -3,6 +3,8 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 
+// include AngleSharp library to work with the HTML page results
+
 public static class PortugueseDictionary
 {
     static readonly HttpClient client = new HttpClient();
