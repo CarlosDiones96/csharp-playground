@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "MrC4SqIm/O+fx3pe175pq/acFYcZYHrJHE3WaBNQl2RUhvNqWIm+Oa3NujbNPLzpSUxohD7Oo1HF36cc7HlGZw==",
+  "dgSpecHash": "ZxtOl7gqqsI9w6m0KmZXz9ZRWwS/fGZb/vtdSK4aYrGC3HXftzsngFKcBSkRIowgAE8xrdUgdWG1OY1NGiOFIQ==",
   "success": true,
   "projectFilePath": "C:\\Projetos\\csharp-playground\\csharp-playground.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\dione\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+    "C:\\Users\\Carlos\\.nuget\\packages\\anglesharp\\0.16.1\\anglesharp.0.16.1.nupkg.sha512",
+    "C:\\Users\\Carlos\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\Carlos\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\Carlos\\.nuget\\packages\\system.text.encoding.codepages\\5.0.0\\system.text.encoding.codepages.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
