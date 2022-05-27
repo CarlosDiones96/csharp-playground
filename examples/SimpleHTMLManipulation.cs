@@ -2,6 +2,7 @@ using System;
 using System.Threading.Tasks;
 using AngleSharp;
 
+// Needs to be tested
 public class SimpleHTMLManipulation
 {
     static async Task Example()
@@ -10,7 +11,7 @@ public class SimpleHTMLManipulation
         var context = BrowsingContext.New(config);
 
         var document = await context.OpenAsync( req => req.Content(
-            "<h1>Example title</h1><p>Just a paragraph</p>"
+            "<h1>Example title</h1><p>A simple paragraph</p>"
         ));
 
         Console.WriteLine("Serializing the (original) document:");
