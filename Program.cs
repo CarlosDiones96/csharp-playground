@@ -1,47 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq.
+using System.IO;
+using System.Linq;
 
-namespace csharp_playground
+namespace MyProgram
 {
-    class Program
+    class MyProgram
     {
-       static void Main(string[] args)
-       {
-         var startingDeck = from s in Suits()
-                            from r in Ranks()
-                            select new { Suit = s, Rank = r };
-        foreach (var card in startingDeck)
+        static void Main(string[] args)
         {
-            Console.WriteLine(card);
+            string archiveDirectory = @"C:\archive";
+
+            var files = from retrievedFile in Directory.EnumerateFiles(archiveDirectory, "*.txt", SearchOption.AllDirectories)
+                        from line in File.ReadLines(retrievedFile)
+                        where line.Contains("Example")
+                        select new 
+                        {
+                            File = retrievedFile,
+                            Line = line
+                        };
+
+            foreach (var f in files)
+            {
+                Console.WriteLine("{0} contains {1}", f.File, f.Line);
+            }
+            Console.WriteLine("{0} lines found.", files.Count().ToString());
         }
-
-       }
-
-       static IEnumerable<string> Suits()
-       {
-           yield return "clubs";
-           yield return "diamonds";
-           yield return "hearts";
-           yield return "spades";
-       }
-
-       static IEnumerable<string> Ranks()
-       {
-           yield return "two";
-           yield return "three";
-           yield return "four";
-           yield return "five";
-           yield return "six";
-           yield return "seven";
-           yield return "eight";
-           yield return "nine";
-           yield return "ten";
-           yield return "jack";
-           yield return "queen";
-           yield return "king";
-           yield return "ace";
-       }
     }
-   
 }
